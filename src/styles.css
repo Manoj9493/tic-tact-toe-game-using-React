@@ -76,15 +76,18 @@ body {
   content: '';
   display: table;
 }
-
 .status {
   margin-bottom: 10px;
 }
 .game {
   display: flex;
   flex-direction: row;
+  margin-top: 10%;
+  margin-left:30%;
+  
 }
 
 .game-info {
   margin-left: 20px;
 }
+

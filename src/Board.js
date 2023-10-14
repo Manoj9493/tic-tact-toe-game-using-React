@@ -6,14 +6,14 @@ export default function Board(props) {
   let status;
   const winner = calculateWinner(squares);
 
-  if (squares.includes(null)) {
-    if (winner) {
-      status = "Winner is : " + winner;
-    } else {
-      status = "Next player is: " + (xIsNext ? "X" : "O");
-    }
+  if (winner) {
+    status = "Winner is : " + winner;
   } else {
-    status = "Match is Drawn";
+    if (squares.includes(null)) {
+      status = "Next player is: " + (xIsNext ? "X" : "O");
+    } else {
+      status = "Match is Drawn";
+    }
   }
 
   const handleClick = (i) => {
